@@ -50,25 +50,26 @@ body{
 	font-family: "Bruno Ace SC", sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	margin: 0 auto;
 	line-height: 1.5;
 }
 
+a{
+	text-decoration: none;
+	display: inline-block;
+	color: inherit;
+}
+
+img{
+	max-width: 100%;
+	vertical-align: middle;
+	height: auto;
+}
+
 /* 背景樣式+排版 */
-nav{
-	background: #000;
-	padding: 40px 312px;
-}
 
-nav ul{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	color: #fff;
-}
-
-nav li{
-	flex-basis: 25%;
+.container{
+	width: 1296px;
+	margin: 0 auto;
 }
 
 .content{
@@ -82,52 +83,29 @@ nav li{
 }
 
 .contact-me{
-	text-align: right;
-}
-
-.contact-me a{
-	padding: 12px 24px;
+	padding: 12px;
 	background: #fff;
 	border-radius: 32px;
+	color: #000;
 }
 
-.container{
+.introduction{
 	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true);
-	display: flex;
-}
-
-.section-right{
-	display: flex;
-	justify-content: center;
-}
-
-.group{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	background-repeat: no-repeat;
+	block-size: cover;
 }
 
 .personality{
-	max-width: 646px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	gap: 24px;
+	width: 636px;
 }
 
 .personality li{ 
-	width: 300px;
-	border: 1px solid #e3e3e3;
-	box-shadow: 4px 4px 4px 0px #00000014;
-}
-
-.aboutme{
-	width: 526px;
-}
-
-.contact{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	width: calc(50% - 12px);
+	box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+	padding: 16px;
 }
 
 .contactme-bg{
@@ -135,11 +113,7 @@ nav li{
 }
 
 .contact li{
-	border-radius: 30%;
-}
-
-.project-container{
-	display: flex;
+	border-radius: 40px;
 }
 
 .see-more{
@@ -148,48 +122,44 @@ nav li{
 }
 
 /* 字型.顏色 */
-.fz16{
-	font-size: 16px;
+.h1{
+	font-size: 128px;
 }
 
-.fz20{
-	font-size: 20px;
-}
-
-.fz24{
-	font-size: 24px;
-}
-
-.fz48{
-	font-size: 48px;
-}
-
-.fz64{
+.h2{
 	font-size: 64px;
 }
 
-.fz96{
-	font-size: 96px;
+.fz-1{
+	font-size: 32px;
 }
 
-.clfff{
-	color: #fff;
+.fz-2{
+	font-size: 24px;
 }
 
-.cl00ffa3{
+.fz-3{
+	font-size: 20px;
+}
+
+.fz-4{
+	font-size: 16px;
+}
+
+.col-1{
+	color: #d1d1d1;
+}
+
+.col-2{
 	color: #00ffa3;
 }
 
-.cl000{
-	color:#000;
+.col-3{
+	color: #fff;
 }
 
-.ta-l{
-	text-align: left;
-}
-
-.ta-c{
-	text-align: center;
+.col-4{
+	color: #000;
 }
 
 .ta-r{
@@ -197,68 +167,49 @@ nav li{
 }
 
 /* 寬高 */
-.w1920{
-	width: 1920px;
+
+.db{
+	display: block;
 }
 
-.w1296{
-	width: 1296px;
-}
-
-.w2785{
-	width: 278.5px;
+.w526{
+	width: 526px;
 }
 
 .w636{
-	width: 700px;
-}
-
-.m46{
-	margin: 46px 0;
-}
-
-.m40-312{
-	margin: 40px 312px;
-}
-
-.p72-312-32{
-	padding: 72px 312px 32px;
+	width: 636px;
 }
 
 .p160{
 	padding: 160px 0;
 }
 
-.p160-312{
-	padding: 160px 312px;
+.p96{
+	padding: 96px 0;
+}
+
+.p40{
+	padding: 40px 0;
 }
 
 .p16{
 	padding: 16px;
 }
 
-.p96-312{
-	padding: 96px 312px;
-}
-
-.ptb40{
-	padding: 40px 0;
-}
-
-.mr113{
-	margin-right: 113px;
+.mr16{
+	margin-right: 16px;
 }
 
 .mr20{
 	margin-right: 20px;
 }
 
-.mr16{
-	margin-right: 16px;
-}
-
 .mr24{
 	margin-right: 24px;
+}
+
+.mb16{
+	margin-bottom: 16px;
 }
 
 .mb24{
@@ -277,19 +228,11 @@ nav li{
 	margin-bottom: 36px;
 }
 
-.mr134{
-	margin-right: 134px;
+.mb72{
+	margin-bottom: 72px;
 }
 
 /* 元素設定 */
-
-img{
-	vertical-align: middle;
-}
-
-a{
-	text-decoration: none;
-}
 
 .bg000{
 	background: #000;
@@ -303,23 +246,32 @@ a{
 	display: flex;
 }
 
-.df-c{
-	display: flex;
+.jc-e{
+	justify-content: end;
+}
+
+.fd-c{
 	flex-direction: column;
-	justify-content: space-between;
-	align-items: baseline;
 }
 
 .jc-c{
 	justify-content: center;
 }
 
-.al-c{
+.jc-sb{
+	justify-content: space-between;
+}
+
+.ai-c{
 	align-items: center;
 }
 
+.flw-w{
+	flex-wrap: wrap;
+}
+
 /* 連結樣式 */
-.contact-me a:hover{
+.contact-me:hover{
 	box-shadow: 0px 0px 16px 3px #acacc2e5; 
 }
 
@@ -327,7 +279,7 @@ a{
 	box-shadow: 0px 0px 16px 3px #7bdde0e5;
 }
 
-.see-more a:hover{
+.btn a:hover{
 	box-shadow: 0px 0px 16px 3px #090979e5;
 	transition: 0.5s;
 }
