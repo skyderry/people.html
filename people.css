@@ -198,16 +198,16 @@ img{
 	padding: 16px;
 }
 
-.mr16{
-	margin-right: 16px;
-}
-
 .gap24{
 	gap: 24px;
 }
 
 .gap28{
 	gap: 28px;
+}
+
+.mb16{
+	margin-bottom: 16px;
 }
 
 .mb28{
