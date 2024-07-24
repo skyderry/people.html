@@ -202,20 +202,12 @@ img{
 	margin-right: 16px;
 }
 
-.mr20{
-	margin-right: 20px;
+.gap24{
+	gap: 24px;
 }
 
-.mr24{
-	margin-right: 24px;
-}
-
-.mb16{
-	margin-bottom: 16px;
-}
-
-.mb24{
-	margin-bottom: 24px;
+.gap28{
+	gap: 28px;
 }
 
 .mb28{
