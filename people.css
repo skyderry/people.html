@@ -72,21 +72,27 @@ img{
 	margin: 0 auto;
 }
 
-.content{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
 .title{
 	padding: 24px;
 }
 
-.contact-me{
-	padding: 12px;
+.william{
+	display: block;
+	text-align: right;
+}
+
+.btn-1{
+	padding: 12px 24px;
 	background: #fff;
 	border-radius: 32px;
 	color: #000;
+}
+
+.btn-2{
+	padding: 12px 24px;
+	background: #000;
+	border-radius: 32px;
+	color: #fff;
 }
 
 .introduction{
@@ -228,7 +234,7 @@ img{
 
 /* 元素設定 */
 
-.bg000{
+.bg-black{
 	background: #000;
 }
 
@@ -269,7 +275,7 @@ img{
 }
 
 /* 連結樣式 */
-.contact-me:hover{
+.btn-1:hover{
 	box-shadow: 0px 0px 16px 3px #acacc2e5; 
 }
 
@@ -277,7 +283,6 @@ img{
 	box-shadow: 0px 0px 16px 3px #7bdde0e5;
 }
 
-.btn a:hover{
-	box-shadow: 0px 0px 16px 3px #090979e5;
-	transition: 0.5s;
+.btn-2:hover{
+	box-shadow: 0px 0px 16px 3px #7f47e6e5;
 }
